@@ -22,6 +22,7 @@
 """
 
 import os
+import sys
 
 from PyQt4 import QtGui, uic
 
@@ -39,3 +40,9 @@ class MyPluginDialog(QtGui.QDialog, FORM_CLASS):
         # http://qt-project.org/doc/qt-4.8/designer-using-a-ui-file.html
         # #widgets-and-dialogs-with-auto-connect
         self.setupUi(self)
+
+# if __name__ == "__main__":
+#     app = QtGui.QApplication(sys.argv)
+#     myapp = MyPluginDialog()   #MyForm是自己的窗体类名
+#     myapp.show()
+#     sys.exit(app.exec_())
